@@ -1,0 +1,15 @@
+<!Doctype html>
+<head>
+	<script src="script.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<link href="extra.css" rel="stylesheet">
+</head>
+<body onload="init();">
+	<input id="slider" type="range" min="0" max="100" step="1" 
+	oninput="showVal(this.value)"
+	onchange="showVal(this.value);ratio=this.value;init();">
+	<span>Ratio = <span id="ratio">50</span></span>
+	<br/>
+	<canvas id="canvas" width="512" height="512"></canvas>
+</body>
+</html>
